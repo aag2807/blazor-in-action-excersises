@@ -1,0 +1,37 @@
+@page "/InfoPage/{coupon}"
+@page "/InfoPage"
+@inject Data.CouponService cpnservice
+
+<div style="width:33%;">
+  <h1>Painting</h1>
+  <p>We do it quickly</p>
+</div>
+
+<div style="width:33%;">
+  <h1>Sketching</h1>
+  <p>We do it quickly</p>
+</div>
+
+<div style="width:33%;">
+  <h1>Paints and other products</h1>
+  <p>Highest quality</p>
+</div>
+
+@if(discountvalue != 0)
+{
+  <div>
+    <p>You're Eligible for @discountvalue % discount</p>
+  </div>
+}
+
+@code {
+  double discountvalue = 0.0;
+
+  [Parameter]
+  public string coupon {get; set;}
+
+  protected override async Task OnInitializedAsync()
+  {
+    discountvalue = await cpnservice.CheckCoupon(coupon);
+  } 
+}

@@ -1,0 +1,47 @@
+@inject Data.ContactService cnservice 
+
+<p>Name</p>
+<p><input @bind="name"></p>
+
+<p>Email</p>
+<p><input @bind="email"></p>
+
+<p>Message</p>
+<p><textarea @bind="message"></textarea> </p>
+
+<p>
+  <button 
+    onclick="@(new Action (() => SendMessageAsync()))"  
+    class="btn btn-outline-dark"
+  >
+    Send
+  </button>
+</p>
+
+
+@code {
+  public string name;
+  public string email;
+  public string message;
+
+  public bool displayboxopened = false;
+  public string displayboxmessage;
+
+  public async void SendMessageAsync()
+  {
+    if(await cnservice.SendMessage(name,email,message))
+    {
+      displayboxmessage = "Message send succesfully";
+      displayboxopened = true;
+      await Task.Delay(7000);
+      displayboxopened = false;
+    }
+    else
+    {
+      displayboxmessage = "Sending failed, please try again";
+      displayboxopened = true;
+      await Task.Delay(7000);
+      displayboxopened = false;
+    }
+  }
+}
