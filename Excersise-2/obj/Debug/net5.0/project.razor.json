@@ -41,101 +41,563 @@
         }
       },
       {
-        "HashCode": 149645930,
+        "HashCode": 345740503,
         "Kind": "Components.Component",
-        "Name": "Excersise_2.Pages.Counter",
+        "Name": "Excersise_2.Components.FIrstComponent",
         "AssemblyName": "Excersise-2",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "FIrstComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "keyforcomponent",
+            "TypeName": "System.Guid",
+            "Metadata": {
+              "Common.PropertyName": "keyforcomponent"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Excersise_2.Pages.Counter"
+          "Common.TypeName": "Excersise_2.Components.FIrstComponent"
         }
       },
       {
-        "HashCode": -574600590,
+        "HashCode": 353076767,
         "Kind": "Components.Component",
-        "Name": "Excersise_2.Pages.Counter",
+        "Name": "Excersise_2.Components.FIrstComponent",
         "AssemblyName": "Excersise-2",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Excersise_2.Pages.Counter"
+            "TagName": "Excersise_2.Components.FIrstComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "keyforcomponent",
+            "TypeName": "System.Guid",
+            "Metadata": {
+              "Common.PropertyName": "keyforcomponent"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Excersise_2.Pages.Counter",
+          "Common.TypeName": "Excersise_2.Components.FIrstComponent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -416669657,
+        "HashCode": 1369576040,
         "Kind": "Components.Component",
-        "Name": "Excersise_2.Pages.FetchData",
+        "Name": "Excersise_2.Components.SecondComponent",
         "AssemblyName": "Excersise-2",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "FetchData"
+            "TagName": "SecondComponent"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Excersise_2.Pages.FetchData"
+          "Common.TypeName": "Excersise_2.Components.SecondComponent"
         }
       },
       {
-        "HashCode": -438838201,
+        "HashCode": -302579130,
         "Kind": "Components.Component",
-        "Name": "Excersise_2.Pages.FetchData",
+        "Name": "Excersise_2.Components.SecondComponent",
         "AssemblyName": "Excersise-2",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Excersise_2.Pages.FetchData"
+            "TagName": "Excersise_2.Components.SecondComponent"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Excersise_2.Pages.FetchData",
+          "Common.TypeName": "Excersise_2.Components.SecondComponent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 425190411,
+        "HashCode": -1184025643,
         "Kind": "Components.Component",
-        "Name": "Excersise_2.Pages.Index",
+        "Name": "Excersise_2.Components.ThirdComponent",
         "AssemblyName": "Excersise-2",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "ThirdComponent"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Excersise_2.Pages.Index"
+          "Common.TypeName": "Excersise_2.Components.ThirdComponent"
         }
       },
       {
-        "HashCode": 704000389,
+        "HashCode": 2114440105,
         "Kind": "Components.Component",
-        "Name": "Excersise_2.Pages.Index",
+        "Name": "Excersise_2.Components.ThirdComponent",
         "AssemblyName": "Excersise-2",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Excersise_2.Pages.Index"
+            "TagName": "Excersise_2.Components.ThirdComponent"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Excersise_2.Pages.Index",
+          "Common.TypeName": "Excersise_2.Components.ThirdComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1063385512,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.AdvancedPages.AdvancedPage1",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AdvancedPage1"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "param1",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "param1"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.AdvancedPages.AdvancedPage1"
+        }
+      },
+      {
+        "HashCode": 1680293137,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.AdvancedPages.AdvancedPage1",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Excersise_2.Pages.AdvancedPages.AdvancedPage1"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "param1",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "param1"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.AdvancedPages.AdvancedPage1",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1714061778,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.AdvancedPages.AdvancedPage2",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AdvancedPage2"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "param1",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "param1"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.AdvancedPages.AdvancedPage2"
+        }
+      },
+      {
+        "HashCode": -327649716,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.AdvancedPages.AdvancedPage2",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Excersise_2.Pages.AdvancedPages.AdvancedPage2"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "param1",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "param1"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.AdvancedPages.AdvancedPage2",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1186351413,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.AdvancedPages.AdvancedPage3",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AdvancedPage3"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.AdvancedPages.AdvancedPage3"
+        }
+      },
+      {
+        "HashCode": 890666379,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.AdvancedPages.AdvancedPage3",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Excersise_2.Pages.AdvancedPages.AdvancedPage3"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.AdvancedPages.AdvancedPage3",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1877766594,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.BasicPages.Page1",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Page1"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.BasicPages.Page1"
+        }
+      },
+      {
+        "HashCode": 1327191394,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.BasicPages.Page1",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Excersise_2.Pages.BasicPages.Page1"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.BasicPages.Page1",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -40923333,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.BasicPages.Page2",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Page2"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.BasicPages.Page2"
+        }
+      },
+      {
+        "HashCode": 458456469,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.BasicPages.Page2",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Excersise_2.Pages.BasicPages.Page2"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.BasicPages.Page2",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 565553075,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.PreviewPage",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PreviewPage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "firstname",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "firstname"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "surname",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "surname"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "bio",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "bio"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "hobbies",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "hobbies"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.PreviewPage"
+        }
+      },
+      {
+        "HashCode": -1214756561,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.PreviewPage",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Excersise_2.Pages.PreviewPage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "firstname",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "firstname"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "surname",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "surname"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "bio",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "bio"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "hobbies",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "hobbies"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.PreviewPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 729385553,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.SIgnUpForm",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SIgnUpForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.SIgnUpForm"
+        }
+      },
+      {
+        "HashCode": 512150874,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.SIgnUpForm",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Excersise_2.Pages.SIgnUpForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.SIgnUpForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 835405027,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.HobbyItem",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "HobbyItem"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "title"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "description",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "description"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnDelete",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "OnDelete",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.HobbyItem"
+        }
+      },
+      {
+        "HashCode": -1911997906,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Pages.HobbyItem",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Excersise_2.Pages.HobbyItem"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "title"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "description",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "description"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnDelete",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "OnDelete",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Pages.HobbyItem",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -189,6 +651,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Excersise_2.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 768331082,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Shared.NavMenu",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 1198716172,
+        "Kind": "Components.Component",
+        "Name": "Excersise_2.Shared.NavMenu",
+        "AssemblyName": "Excersise-2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Excersise_2.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Excersise_2.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -289,35 +784,35 @@
         }
       },
       {
-        "HashCode": 768331082,
+        "HashCode": -993100005,
         "Kind": "Components.Component",
-        "Name": "Excersise_2.Shared.NavMenu",
+        "Name": "Excersise_2.Shared.EmptyLayout",
         "AssemblyName": "Excersise-2",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NavMenu"
+            "TagName": "EmptyLayout"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Excersise_2.Shared.NavMenu"
+          "Common.TypeName": "Excersise_2.Shared.EmptyLayout"
         }
       },
       {
-        "HashCode": 1198716172,
+        "HashCode": 488562100,
         "Kind": "Components.Component",
-        "Name": "Excersise_2.Shared.NavMenu",
+        "Name": "Excersise_2.Shared.EmptyLayout",
         "AssemblyName": "Excersise-2",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Excersise_2.Shared.NavMenu"
+            "TagName": "Excersise_2.Shared.EmptyLayout"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Excersise_2.Shared.NavMenu",
+          "Common.TypeName": "Excersise_2.Shared.EmptyLayout",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -12993,8 +13488,23 @@
   "RootNamespace": "Excersise-2",
   "Documents": [
     {
-      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Shared/EmptyLayout.razor",
+      "TargetPath": "Shared\\EmptyLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Components/ThirdComponent.razor",
+      "TargetPath": "Components\\ThirdComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/BasicPages/Page2.razor",
+      "TargetPath": "Pages\\BasicPages\\Page2.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/SIgnUpForm.razor",
+      "TargetPath": "Pages\\SIgnUpForm.razor",
       "FileKind": "component"
     },
     {
@@ -13003,8 +13513,33 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/HobbyItem.razor",
+      "TargetPath": "Pages\\HobbyItem.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/AdvancedPages/AdvancedPage2.razor",
+      "TargetPath": "Pages\\AdvancedPages\\AdvancedPage2.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Shared/SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/AdvancedPages/AdvancedPage3.razor",
+      "TargetPath": "Pages\\AdvancedPages\\AdvancedPage3.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/_Imports.razor",
+      "TargetPath": "Pages\\_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/PreviewPage.razor",
+      "TargetPath": "Pages\\PreviewPage.razor",
       "FileKind": "component"
     },
     {
@@ -13023,13 +13558,28 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Shared/NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Shared/NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/BasicPages/Page1.razor",
+      "TargetPath": "Pages\\BasicPages\\Page1.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Components/FIrstComponent.razor",
+      "TargetPath": "Components\\FIrstComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/AdvancedPages/AdvancedPage1.razor",
+      "TargetPath": "Pages\\AdvancedPages\\AdvancedPage1.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Components/SecondComponent.razor",
+      "TargetPath": "Components\\SecondComponent.razor",
       "FileKind": "component"
     }
   ],

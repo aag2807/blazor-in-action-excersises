@@ -89,21 +89,6 @@ using Excersise_2.Shared;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 28 "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Shared/NavMenu.razor"
-       
-    private bool collapseNavMenu = true;
-
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

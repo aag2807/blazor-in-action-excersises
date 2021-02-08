@@ -1,7 +1,40 @@
-﻿@page "/"
+@page "/componentExample"
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+<button 
+  @onclick="@AddElement"
+  class="btn btn-outline-info"
+>
+  Add
+</button>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@foreach (var item in ElementList)
+{
+  <p>
+    <button 
+      @onclick="@(()=> RemoveELement(item))"
+      class="btn btn-outline-danger"
+      >
+        Remove
+    </button>
+  </p>
+  <p>
+    <Excersise_2.Components.FIrstComponent @key="item" keyforcomponent="item">
+
+    </Excersise_2.Components.FIrstComponent>
+  </p>
+
+}
+@code {
+  List<Guid> ElementList = new List<Guid>();
+  
+  void AddElement()
+  {
+    ElementList.Add(Guid.NewGuid());
+  }
+
+  void RemoveELement(Guid id)
+  {
+    ElementList.Remove(id);
+  }
+}

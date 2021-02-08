@@ -82,7 +82,7 @@ using Excersise_2.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/componentExample")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -90,6 +90,24 @@ using Excersise_2.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 28 "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Pages/Index.razor"
+       
+  List<Guid> ElementList = new List<Guid>();
+  
+  void AddElement()
+  {
+    ElementList.Add(Guid.NewGuid());
+  }
+
+  void RemoveELement(Guid id)
+  {
+    ElementList.Remove(id);
+  }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

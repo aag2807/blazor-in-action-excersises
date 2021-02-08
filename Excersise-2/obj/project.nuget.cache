@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m9AxpwbCgiirSaIcINcPsBuc5j6AGK4e4+ei2451Egn5sHqylxwkpmTw3sQo8y3lKv2S/U9PvLStlVCYj6fxEg==",
+  "dgSpecHash": "CTl5W/v5Jc7nkXxJZ8KPhgCcS8Q1mfGIub24cl0A7TupSZAxB703mZAW5UkaQ0F3flGreA7YZxrzIetawSwufw==",
   "success": true,
   "projectFilePath": "/home/alvaro/Documents/csharp/blazor in action/Excersise-2/Excersise-2.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "/home/alvaro/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "/home/alvaro/.nuget/packages/microsoft.jsinterop/5.0.2/microsoft.jsinterop.5.0.2.nupkg.sha512",
     "/home/alvaro/.nuget/packages/microsoft.jsinterop.webassembly/5.0.2/microsoft.jsinterop.webassembly.5.0.2.nupkg.sha512",
+    "/home/alvaro/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/home/alvaro/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
     "/home/alvaro/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512",
     "/home/alvaro/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.2/microsoft.netcore.app.runtime.browser-wasm.5.0.2.nupkg.sha512"

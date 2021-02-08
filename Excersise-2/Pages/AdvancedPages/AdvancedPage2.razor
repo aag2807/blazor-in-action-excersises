@@ -1,0 +1,13 @@
+@page "/advancedpage2/{param1}"
+@page "/advancedpage2"
+
+<p>this is the advanced page 2</p>
+@if (param1 != null)
+{
+  <p>parameter: @param1</p>
+}
+
+@code {
+  [Parameter]
+  public string param1 { get;set;}
+}

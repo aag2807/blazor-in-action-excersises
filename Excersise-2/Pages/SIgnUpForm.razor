@@ -1,0 +1,87 @@
+@page "/signuppage"
+@inject NavigationManager navmanager
+@using  Newtonsoft.Json;
+
+<div>
+  <div>
+    <label for="Fname">
+      First Name
+    </label>
+      <input id="Fname" type="text" @bind="firstname" />
+  </div>
+  <div>
+    <label for="Sname">
+      Second Name
+    </label>
+      <input id="Sname" type="text" @bind="surname" />
+  </div>
+  <div>
+    <label for="bio">Bio</label>
+      <input id="Fname" type="text" @bind="bio" />
+  </div>
+  <p>Hobbies</p>
+  <p>Title</p>
+  <div>
+    <input type="text" @bind="@newhobby.title"/>
+  </div>
+  <div>
+    <textarea @bind="@newhobby.description" />
+  </div>
+  <div>
+    <button @onclick="@AddHobby" class="btn btn-outline-secondary">
+      Add Hobby
+    </button>
+  </div>
+  <p>My Hobbies</p>
+</div>
+
+
+@foreach (var item in hobbies)
+{
+  <HobbyItem 
+    @key="@item.id" 
+    id="@item.id"  
+    title="@item.title"  
+    OnDelete="DeleteHobby" 
+    description="@item.description">
+  
+  </HobbyItem>
+}
+<div>
+  <button 
+    @onclick="@Submit" 
+    class="btn btn-outline-success">
+    Submit
+  </button>
+</div>
+
+@code {
+  string firstname { get; set; }
+  string surname { get; set; }
+  string bio { get; set; }
+  
+  HobbyModel newhobby = new HobbyModel() { 
+    id = Guid.NewGuid().ToString() 
+  };
+  
+  List<HobbyModel> hobbies { get; set; } = new List<HobbyModel>();
+
+  void AddHobby()
+  {
+    hobbies.Add(newhobby);
+    newhobby = new HobbyModel(){ id = Guid.NewGuid().ToString()};
+  }
+
+  void DeleteHobby(string id)
+  {
+    hobbies.Remove(hobbies.Where(x => x.id == id).ToArray()[0]);
+  }
+
+  void Submit()
+  {
+    var json = JsonConvert.SerializeObject(hobbies);
+    navmanager.NavigateTo("/previewpage/" 
+      + firstname + "/" + surname + "/" + bio + "/" + json);
+
+  }
+}
