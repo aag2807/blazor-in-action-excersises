@@ -1,0 +1,67 @@
+﻿@page "/storage"
+@inject IJSRuntime js
+
+<p>Test Key</p>
+<div>
+  <input type="text" @bind="@testkey"/>
+</div>
+<hr>
+<p>Test value</p>
+<div>
+  <input type="text" @bind="@testvalue"/>
+</div>
+<div>
+  <button class="btn" @onclick="@(async () => await AddStringToSessionStorage())">
+    Insert to session
+  </button>
+</div>
+
+<div>
+  <button class="btn" @onclick="@(async () => await AddStringToLocalStorage())">
+    Insert to Local
+  </button>
+</div>
+
+<p>key to retrieve</p>
+<div>
+  <input @bind="@testkey_forget">
+</div>
+<div>
+  <button @onclick="@(async () => await GetStringFromSessionStorage())">
+    Get from session
+  </button>
+</div>
+<div>
+  <button @onclick="@(async () => await GetStringFromLocalStorage())">
+    Get from local
+  </button>
+</div>
+<p class="text-center">@output</p>
+
+@code {
+  string testkey;
+  string testvalue;
+  string testkey_forget;
+  string output;
+
+  async Task AddStringToLocalStorage()
+  {
+    await js.InvokeAsync<object>("window.localStorage.setItem",testkey, testvalue);
+  }
+
+  async Task GetStringFromLocalStorage()
+  { 
+    output = await js.InvokeAsync<string>("window.localStorage.getItem", testkey_forget);
+  }
+
+ async Task AddStringToSessionStorage()
+ {
+    await js.InvokeAsync<object>("window.sessionStorage.setItem",testkey, testvalue);
+ }
+
+ async Task GetStringFromSessionStorage()
+ {
+   output = await js.InvokeAsync<string>("window.sessionStorage.getItem", testkey_forget);
+ }
+
+}

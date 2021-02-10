@@ -1,0 +1,71 @@
+@page "/otherStores"
+@inject IJSRuntime js
+@using System.Runtime.Serialization.Formatters.Binary;
+
+<div class="text-center" style="display:flex;flex-direction:column; justify-content:center;">
+  <h3>Key to retrieve</h3>
+  <div>
+    <input type="text" @bind="@testkey_forget">
+  </div>
+  <div class="text-center">
+    <button 
+      @onclick="@(async () => await GetObjectFromLocalStorage())"
+      class="btn btn-info"
+    >
+      Get Object from local
+    </button>
+  </div>
+</div>
+<h5>@output</h5>
+<hr>
+<div class="text-center" style="display:flex;flex-direction:column; justify-content:center;">
+  <h3>Insert Object</h3>
+  <div>
+    <label for="key">key</label>
+    <input id="key" type="text" @bind="@testkey_forobject">
+  </div>
+
+  <div>
+    <label for="id">Id</label>
+  </div>
+
+  <div>
+    <label for="val">Value</label>
+  </div>
+  
+
+  <div class="text-center">
+    <button 
+      @onclick="@(async () => await AddObjectToLocal())"
+      class="btn btn-success"
+    >
+      Insert object to local
+    </button>
+  </div>
+</div>
+
+@code {
+  string testkey_forget;
+  string testkey_forobject;
+
+  string output;
+
+  async Task AddObjectToLocal()
+  {
+    BinaryFormatter formatter = new BinaryFormatter();
+    var tempstream = new System.IO.MemoryStream();
+    string base64 = Convert.ToBase64String(tempstream.ToArray());
+    await js.InvokeAsync<object>("window.localStorage.setItem", testkey_forobject, base64);
+  }
+
+  async Task GetObjectFromLocalStorage()
+  {
+    string base64 = await js.InvokeAsync<string>("window.localStorage.getItem", testkey_forget);
+    
+    output = base64;
+    BinaryFormatter formatter = new BinaryFormatter();
+    var tempstream = new System.IO.MemoryStream(Convert.FromBase64String(base64));
+  
+  }
+  
+}

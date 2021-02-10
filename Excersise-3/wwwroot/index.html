@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Excersise-3</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="Excersise-3.styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">Loading...</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+    let FileManager = {
+            downloadfile(name, bt64){
+                let downloadlink = document.createElement('a');
+                downloadlink.name = name;
+                downloadlink.href = "data:application/octet-stream;base64," + bt64;
+                document.body.appendChild(downloadlink);
+                downloadlink.click();
+                document.body.removeChild(downloadlink);
+            },
+            filedata: [],
+            readeron: true,
+            openreading(){
+                document.getElementById('fileinput').click();
+                return true;
+            },
+            startreading(){
+                this.readeron = true;
+                let reader = new FileReader();
+                reader.onloadend = function (){
+                    try {
+                        let dtw = new DataView(reader.result);
+                        for(let i = 0; i < dtw.byteLength; i++) {
+                            FileManager.filedata(dtw.getInt8(i))
+                        }
+                    }catch(e){
+                        console.log(e)
+                    }
+                    this.readeron = false; 
+                };
+                reader.readAsArrayBuffer(document.getElementById('fileinput').files[0])
+            },
+            getfile(){
+                return FileManager.filedata;
+            }
+        };
+    </script>
+</body>
+
+</html>

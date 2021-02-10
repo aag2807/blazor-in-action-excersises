@@ -1,0 +1,31 @@
+@page "/UIeventargsPage"
+
+<div class="text-center">
+  <input 
+    type="text" 
+    @onchange="@(async (changeargs)=> await TestChangeArguments(changeargs))"
+  />
+</div>
+
+<div 
+  style="width: 300px;height:300px;border:3px solid #ff0000;"
+  type="checkbox" @onmousemove="@(async (changeargs)=> await TestMouseArguments(changeargs))"
+></div>
+
+<p>@output</p>
+
+@code {
+  string output;
+  
+  Task TestChangeArguments(ChangeEventArgs e)
+  {
+    output = (string)e.Value;
+    return Task.CompletedTask;
+  }
+  
+  Task TestMouseArguments(MouseEventArgs e)
+  {
+    output = "x: " + e.ScreenX + "; y: " + e.ScreenY;
+    return Task.CompletedTask;
+  }
+}

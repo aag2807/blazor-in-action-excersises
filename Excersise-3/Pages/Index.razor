@@ -1,0 +1,48 @@
+@page "/"
+@using System.Linq;
+@inject IJSRuntime js
+
+<button @onclick="@(async()=> await getfile())" class="btn btn-info">
+  Get File
+</button>
+<input type="file" id="fileinput" @onchange="@(async() => await OpenFile())">
+<button @onclick="@(async () => await DownloadFile())"class="btn btn-success">
+  Download
+</button>
+<p>@statustext</p>
+<p>@statustext1</p>
+
+@code {
+  byte[] selectedfilebytes;
+  string statustext;
+  string statustext1;
+  async Task getfile()
+  {
+    await js.InvokeAsync<object>("FileManager.openreading");
+  }
+
+  async Task OpenFile()
+  {
+    try
+    {
+      statustext = "reading";
+      await js.InvokeAsync<object>("FileManager.startreading");
+      await Task.Delay(7000);
+      int[] ob = await js.InvokeAsync<int[]>("FileManager.getfile");
+      selectedfilebytes = ob.Select(x => (byte)x).ToArray();
+      statustext1 = "done";   
+    }
+    catch(Exception e)
+    {
+      statustext = e.Message + "\n\n" + e.InnerException;
+
+    }
+  }
+
+  async Task DownloadFile()
+  {
+    string base64 = Convert.ToBase64String(selectedfilebytes);
+    await js.InvokeAsync<object>("FileManager.downloadfile", "testfile_" + DateTime.UtcNow.ToFileTimeUtc().ToString() + ".avi", base64);
+  }
+
+}

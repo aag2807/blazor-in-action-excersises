@@ -1,0 +1,18 @@
+@page "/UIeventsPage"
+
+<textarea @onpaste="@OnpasteTest"></textarea>
+<video @onpause="@OnPauseTest"></video>
+<p>@output</p>
+
+@code {
+  string output;
+  void OnpasteTest()
+  {
+    output = " text pasted ";
+  }
+
+  void OnPauseTest()
+  {
+    output = " Don't give up watching";
+  }
+}

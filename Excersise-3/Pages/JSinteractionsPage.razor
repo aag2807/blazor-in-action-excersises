@@ -1,0 +1,30 @@
+@page "/JSinteractionsPage"
+@inject IJSRuntime js
+
+
+<p>@a</p>
+<div>
+  <input @bind="@a" type="text">
+</div>
+
+<p>@b</p>
+<div>
+  <input @bind="@b" type="text">
+</div>
+<div class="text-center">
+  <button
+    @onclick="@(async () => await TestMethod())" 
+    class="btn btn-danger">
+    Test
+  </button>
+</div>
+
+@code {
+  double a;
+  double b;
+  double result;
+  async Task TestMethod()
+  {
+    result = await js.InvokeAsync<double>("TestFunction", a,b);
+  }
+}
